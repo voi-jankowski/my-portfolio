@@ -1,8 +1,16 @@
-import logo from "./logo.svg";
+// Filename: App.js
 import "./App.css";
+import React from "react";
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 
 function App() {
-  return <h1>Hello, World!</h1>;
+  return (
+    <div>
+      <Navigation></Navigation>
+      <Header></Header>
+    </div>
+  );
 }
 
 export default App;
