@@ -1,16 +1,8 @@
 // Filename: App.js
 import "./App.css";
 import React from "react";
-import Header from "./components/Header";
-import Navigation from "./components/Navigation";
+import PortfolioContainer from "./components/PortfolioContainer";
 
-function App() {
-  return (
-    <div>
-      <Navigation></Navigation>
-      <Header></Header>
-    </div>
-  );
-}
+const App = () => <PortfolioContainer />;
 
 export default App;
