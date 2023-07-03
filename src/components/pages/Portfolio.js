@@ -5,25 +5,25 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Marvelites",
-      image: "https://i.imgur.com/8BjZjZ4.png",
+      image: "/assets/MarvelitesGIF.gif",
       deployedLink: "https://voi-jankowski.github.io/marvel/",
       githubLink: "https://github.com/voi-jankowski/marvel",
     },
     {
       title: "Social Network Back End",
-      image: "https://i.imgur.com/8BjZjZ4.png",
+      image: "/assets/SocialMediaGIF.gif",
       deployedLink: "https://github.com/voi-jankowski/social-network-api",
       githubLink: "https://github.com/voi-jankowski/social-network-api",
     },
     {
       title: "TechTonic Blog",
-      image: "https://i.imgur.com/8BjZjZ4.png",
+      image: "/assets/TechTonicGIF.gif",
       deployedLink: "https://safe-sea-90944.herokuapp.com/",
       githubLink: "https://github.com/voi-jankowski/tech-blog",
     },
     {
       title: "E-commerce Back End",
-      image: "https://i.imgur.com/8BjZjZ4.png",
+      image: "/assets/E-CommerceGIF.gif",
       deployedLink: "https://github.com/voi-jankowski/e-commerce-back-end",
       githubLink: "https://github.com/voi-jankowski/e-commerce-back-end",
     },
@@ -35,19 +35,19 @@ const Portfolio = () => {
     // },
     {
       title: "Weather Dashboard",
-      image: "https://i.imgur.com/8BjZjZ4.png",
+      image: "/assets/WeatherDashboardGIF.gif",
       deployedLink: "https://voi-jankowski.github.io/weather-dashboard/",
       githubLink: "https://github.com/voi-jankowski/weather-dashboard",
     },
     {
       title: "Work Day Scheduler",
-      image: "https://i.imgur.com/8BjZjZ4.png",
+      image: "/assets/DaySchedulerGIF.gif",
       deployedLink: "https://voi-jankowski.github.io/work-day-scheduler/",
       githubLink: "https://github.com/voi-jankowski/work-day-scheduler",
     },
     {
       title: "Password Generator",
-      image: "https://i.imgur.com/8BjZjZ4.png",
+      image: "/assets/PasswordGeneratorGIF.gif",
       deployedLink: "https://voi-jankowski.github.io/password-generator/",
       githubLink: "https://github.com/voi-jankowski/password-generator",
     },
