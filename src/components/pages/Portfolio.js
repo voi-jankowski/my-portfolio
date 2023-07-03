@@ -12,7 +12,7 @@ const Portfolio = () => {
     {
       title: "Social Network Back End",
       image: "https://i.imgur.com/8BjZjZ4.png",
-      deployedLink: "https://voi-jankowski.github.io/social-network-api",
+      deployedLink: "https://github.com/voi-jankowski/social-network-api",
       githubLink: "https://github.com/voi-jankowski/social-network-api",
     },
     {
