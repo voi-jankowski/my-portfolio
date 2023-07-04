@@ -19,7 +19,7 @@ export const validateForm = (formData) => {
   return errors;
 };
 
-export const isValidEmail = (email) => {
+const isValidEmail = (email) => {
   // Simple email validation regex pattern
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
