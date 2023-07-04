@@ -11,3 +11,9 @@
 .proficiency-card code {
   color: rgb(32, 201, 231);
 }
+
+code {
+  font-weight: bolder;
+
+  padding: 0.2rem;
+}
