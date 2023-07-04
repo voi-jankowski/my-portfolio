@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Button } from "semantic-ui-react";
+import { validateForm, isValidEmail } from "../../utils/helpers";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const [formErrors, setFormErrors] = useState({});
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -18,14 +21,20 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform any necessary form validation or data processing here
-    console.log(formData);
-    // Reset form fields
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    // Perform any necessary form validation or data processing
+    const errors = validateForm(formData);
+    setFormErrors(errors);
+    // If there are no errors, submit the form
+    if (Object.keys(errors).length === 0) {
+      // Perform any necessary form submission or data processing here
+      console.log(formData);
+      // Reset form fields
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
   };
 
   return (
@@ -34,7 +43,7 @@ const Contact = () => {
         <h2>Contact Me</h2>
         <br />
         <Form onSubmit={handleSubmit}>
-          <Form.Field required>
+          <Form.Field required error={formErrors.name}>
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -43,6 +52,9 @@ const Contact = () => {
               value={formData.name}
               onChange={handleInputChange}
             />
+            {formErrors.name && (
+              <span className="error-message">Name is required</span>
+            )}
           </Form.Field>
           <Form.Field required>
             <label htmlFor="email">Email address:</label>
@@ -53,8 +65,11 @@ const Contact = () => {
               value={formData.email}
               onChange={handleInputChange}
             />
+            {formErrors.name && (
+              <span className="error-message">Invalid email address</span>
+            )}
           </Form.Field>
-          <Form.Field required>
+          <Form.Field required error={formErrors.message}>
             <label htmlFor="message">Message:</label>
             <textarea
               name="message"
@@ -62,6 +77,9 @@ const Contact = () => {
               value={formData.message}
               onChange={handleInputChange}
             />
+            {formErrors.message && (
+              <span className="error-message">Message is required</span>
+            )}
           </Form.Field>
 
           <Button type="submit">Submit</Button>
