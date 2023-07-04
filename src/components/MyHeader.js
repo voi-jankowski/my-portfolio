@@ -1,5 +1,6 @@
 import React from "react";
 import { Segment, Header, Image } from "semantic-ui-react";
+import "../App.css"; // Import the styles.css file
 
 const MyHeader = () => {
   const segmentStyle = {
@@ -10,7 +11,7 @@ const MyHeader = () => {
   };
   return (
     <Segment
-      inverted
+      className="header"
       padded="very"
       vertical
       textAlign="center"

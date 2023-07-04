@@ -1,0 +1,19 @@
+/* styles.css */
+
+/* Body styles */
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Header styles */
+.header {
+  background-color: transparent;
+  color: white;
+}
+
+/* Footer styles */
+.footer {
+  background-color: transparent;
+  color: white;
+}

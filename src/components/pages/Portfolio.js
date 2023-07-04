@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "../Project";
+import { Grid, Card } from "semantic-ui-react";
 
 const Portfolio = () => {
   const projects = [
@@ -45,12 +46,12 @@ const Portfolio = () => {
       deployedLink: "https://voi-jankowski.github.io/work-day-scheduler/",
       githubLink: "https://github.com/voi-jankowski/work-day-scheduler",
     },
-    {
-      title: "Password Generator",
-      image: "/assets/PasswordGeneratorGIF.gif",
-      deployedLink: "https://voi-jankowski.github.io/password-generator/",
-      githubLink: "https://github.com/voi-jankowski/password-generator",
-    },
+    // {
+    //   title: "Password Generator",
+    //   image: "/assets/PasswordGeneratorGIF.gif",
+    //   deployedLink: "https://voi-jankowski.github.io/password-generator/",
+    //   githubLink: "https://github.com/voi-jankowski/password-generator",
+    // },
     // {
     // title: "NoteTaker",
     // image: "https://i.imgur.com/8BjZjZ4.png",
@@ -68,17 +69,18 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h2>Portfolio</h2>
-      <div className="projects-container">
+      <Grid stackable columns={3}>
         {projects.map((project, index) => (
-          <Project
-            key={index}
-            title={project.title}
-            image={project.image}
-            deployedLink={project.deployedLink}
-            githubLink={project.githubLink}
-          />
+          <Grid.Column key={index}>
+            <Project
+              title={project.title}
+              image={project.image}
+              deployedLink={project.deployedLink}
+              githubLink={project.githubLink}
+            />
+          </Grid.Column>
         ))}
-      </div>
+      </Grid>
     </section>
   );
 };

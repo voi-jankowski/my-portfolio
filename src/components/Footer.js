@@ -1,8 +1,9 @@
 import React from "react";
+import "../App.css"; // Import the styles.css file
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <div className="footer-links">
         <a
           href="https://github.com/voi-jankowski"
