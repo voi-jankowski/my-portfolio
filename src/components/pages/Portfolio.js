@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../Project";
-import { Grid, Card } from "semantic-ui-react";
+import { Grid, Container } from "semantic-ui-react";
 
 const Portfolio = () => {
   const projects = [
@@ -67,8 +67,10 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio">
+    <Container id="portfolio">
+      <br />
       <h2>Portfolio</h2>
+      <br />
       <Grid stackable columns={3}>
         {projects.map((project, index) => (
           <Grid.Column key={index}>
@@ -81,7 +83,7 @@ const Portfolio = () => {
           </Grid.Column>
         ))}
       </Grid>
-    </section>
+    </Container>
   );
 };
 

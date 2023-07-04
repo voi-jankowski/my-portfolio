@@ -48,57 +48,56 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
-      <Container>
-        <h2>Contact Me</h2>
-        <br />
-        <Form onSubmit={handleSubmit}>
-          <Form.Field required error={formErrors.name}>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={formData.name}
-              onChange={handleInputChange}
-              onBlur={handleBlur}
-            />
-            {formErrors.name && (
-              <span className="error-message">Name is required</span>
-            )}
-          </Form.Field>
-          <Form.Field required error={formErrors.email}>
-            <label htmlFor="email">Email address:</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleInputChange}
-              onBlur={handleBlur}
-            />
-            {formErrors.email && (
-              <span className="error-message">Invalid email address</span>
-            )}
-          </Form.Field>
-          <Form.Field required error={formErrors.message}>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              name="message"
-              rows="5"
-              value={formData.message}
-              onChange={handleInputChange}
-              onBlur={handleBlur}
-            />
-            {formErrors.message && (
-              <span className="error-message">Message is required</span>
-            )}
-          </Form.Field>
+    <Container id="contact">
+      <br />
+      <h2>Contact Me</h2>
+      <br />
+      <Form onSubmit={handleSubmit}>
+        <Form.Field required error={formErrors.name}>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleInputChange}
+            onBlur={handleBlur}
+          />
+          {formErrors.name && (
+            <span className="error-message">Name is required</span>
+          )}
+        </Form.Field>
+        <Form.Field required error={formErrors.email}>
+          <label htmlFor="email">Email address:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleInputChange}
+            onBlur={handleBlur}
+          />
+          {formErrors.email && (
+            <span className="error-message">Invalid email address</span>
+          )}
+        </Form.Field>
+        <Form.Field required error={formErrors.message}>
+          <label htmlFor="message">Message:</label>
+          <textarea
+            name="message"
+            rows="5"
+            value={formData.message}
+            onChange={handleInputChange}
+            onBlur={handleBlur}
+          />
+          {formErrors.message && (
+            <span className="error-message">Message is required</span>
+          )}
+        </Form.Field>
 
-          <Button type="submit">Submit</Button>
-        </Form>
-      </Container>
-    </section>
+        <Button type="submit">Submit</Button>
+      </Form>
+    </Container>
   );
 };
 

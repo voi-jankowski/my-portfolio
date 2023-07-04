@@ -5,6 +5,7 @@ const About = () => {
   return (
     <section id="about">
       <Container text>
+        <br />
         <Header as="h2">About Me</Header>
         <Image
           src="assets/profile-zoom.jpg"
