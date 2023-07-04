@@ -10,21 +10,21 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-github"></i>
+          <i className="fab fa-github fa-lg"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/voi-jankowski/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin"></i>
+          <i className="fab fa-linkedin fa-lg"></i>
         </a>
         <a
           href="https://stackoverflow.com/users/21063446/voi-jankowski"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-stack-overflow"></i>
+          <i className="fab fa-stack-overflow fa-lg"></i>
         </a>
       </div>
     </footer>
