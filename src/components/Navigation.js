@@ -1,4 +1,5 @@
 import React from "react";
+import { Menu, Segment } from "semantic-ui-react";
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
