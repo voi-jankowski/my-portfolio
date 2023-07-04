@@ -1,31 +1,75 @@
 import React from "react";
-import { Container, Form, Button } from "semantic-ui-react";
+import { Container, Header, Card } from "semantic-ui-react";
+import "./Resume.css"; // Import custom CSS file for Resume component
 
-const Contact = () => {
+const Resume = () => {
+  const resumeUrl =
+    "https://drive.google.com/file/d/13gJ0KhZifEDD9gqVvX2YrINbLB8X9t9a/view?usp=sharing";
+
   return (
-    <section id="contact">
+    <section id="resume">
       <Container>
-        <h2>Contact Me</h2>
-        <br />
-        <Form>
-          <Form.Field required error="Please enter your name">
-            <label htmlFor="name">Name:</label>
-            <input type="text" name="name" placeholder="Name" />
-          </Form.Field>
-          <Form.Field required error="Please enter your email address">
-            <label htmlFor="email">Email address:</label>
-            <input type="email" name="email" placeholder="Email" />
-          </Form.Field>
-          <Form.Field required error="Please enter your message">
-            <label htmlFor="message">Message:</label>
-            <textarea name="message" rows="5" />
-          </Form.Field>
-
-          <Button type="submit">Submit</Button>
-        </Form>
+        <Header as="h2">Resume</Header>
+        <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+          View Resume
+        </a>
+        <Card.Group>
+          <Card className="proficiency-card">
+            <Card.Content>
+              <Card.Header className="green-text">
+                Front-end Proficiencies
+              </Card.Header>
+              <Card.Description>
+                <code>
+                  [
+                  <br />
+                  &nbsp;&nbsp;"HTML",
+                  <br />
+                  &nbsp;&nbsp;"CSS",
+                  <br />
+                  &nbsp;&nbsp;"JavaScript",
+                  <br />
+                  &nbsp;&nbsp;"JQuery",
+                  <br />
+                  &nbsp;&nbsp;"React",
+                  <br />
+                  &nbsp;&nbsp;"Bootstrap",
+                  <br />
+                  &nbsp;&nbsp;"Materialize"
+                  <br />]
+                </code>
+              </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card className="proficiency-card">
+            <Card.Content>
+              <Card.Header className="green-text">
+                Back-end Proficiencies
+              </Card.Header>
+              <Card.Description>
+                <code>
+                  [
+                  <br />
+                  &nbsp;&nbsp;"APIs",
+                  <br />
+                  &nbsp;&nbsp;"Node",
+                  <br />
+                  &nbsp;&nbsp;"Express",
+                  <br />
+                  &nbsp;&nbsp;"MySQL, Sequelize",
+                  <br />
+                  &nbsp;&nbsp;"MongoDB, Mongoose",
+                  <br />
+                  &nbsp;&nbsp;"REST"
+                  <br />]
+                </code>
+              </Card.Description>
+            </Card.Content>
+          </Card>
+        </Card.Group>
       </Container>
     </section>
   );
 };
 
-export default Contact;
+export default Resume;

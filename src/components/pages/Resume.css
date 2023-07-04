@@ -1,0 +1,13 @@
+.proficiency-card {
+  background-color: black;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.proficiency-header {
+  color: rgb(0, 218, 116) !important;
+}
+
+.proficiency-card code {
+  color: rgb(32, 201, 231);
+}
