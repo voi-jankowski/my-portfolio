@@ -1,54 +1,41 @@
 import React from "react";
-import { Menu, Segment } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="#about"
-            onClick={() => handlePageChange("About")}
-            className={currentPage === "About" ? "nav-link active" : "nav-link"}
-          >
-            About Me
-          </a>
-        </li>
-        <li>
-          <a
-            href="#portfolio"
-            onClick={() => handlePageChange("Portfolio")}
-            className={
-              currentPage === "Portfolio" ? "nav-link active" : "nav-link"
-            }
-          >
-            Portfolio
-          </a>
-        </li>
-        <li>
-          <a
-            href="#contact"
-            onClick={() => handlePageChange("Contact")}
-            className={
-              currentPage === "Contact" ? "nav-link active" : "nav-link"
-            }
-          >
-            Contact
-          </a>
-        </li>
-        <li>
-          <a
-            href="#resume"
-            onClick={() => handlePageChange("Resume")}
-            className={
-              currentPage === "Resume" ? "nav-link active" : "nav-link"
-            }
-          >
-            Resume
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <Menu pointing secondary stackable>
+      <Menu.Item
+        name="About"
+        active={currentPage === "About"}
+        onClick={() => handlePageChange("About")}
+      >
+        About Me
+      </Menu.Item>
+
+      <Menu.Item
+        name="Portfolio"
+        active={currentPage === "Portfolio"}
+        onClick={() => handlePageChange("Portfolio")}
+      >
+        Portfolio
+      </Menu.Item>
+
+      <Menu.Item
+        name="Contact"
+        active={currentPage === "Contact"}
+        onClick={() => handlePageChange("Contact")}
+      >
+        Contact
+      </Menu.Item>
+
+      <Menu.Item
+        name="Resume"
+        active={currentPage === "Resume"}
+        onClick={() => handlePageChange("Resume")}
+      >
+        Resume
+      </Menu.Item>
+    </Menu>
   );
 }
 
