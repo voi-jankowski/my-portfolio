@@ -19,6 +19,16 @@ const Contact = () => {
     }));
   };
 
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    if (value.trim() === "") {
+      setFormErrors((prevErrors) => ({
+        ...prevErrors,
+        [name]: true,
+      }));
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform any necessary form validation or data processing
@@ -51,12 +61,13 @@ const Contact = () => {
               placeholder="Name"
               value={formData.name}
               onChange={handleInputChange}
+              onBlur={handleBlur}
             />
             {formErrors.name && (
               <span className="error-message">Name is required</span>
             )}
           </Form.Field>
-          <Form.Field required>
+          <Form.Field required error={formErrors.email}>
             <label htmlFor="email">Email address:</label>
             <input
               type="email"
@@ -64,8 +75,9 @@ const Contact = () => {
               placeholder="Email"
               value={formData.email}
               onChange={handleInputChange}
+              onBlur={handleBlur}
             />
-            {formErrors.name && (
+            {formErrors.email && (
               <span className="error-message">Invalid email address</span>
             )}
           </Form.Field>
@@ -76,6 +88,7 @@ const Contact = () => {
               rows="5"
               value={formData.message}
               onChange={handleInputChange}
+              onBlur={handleBlur}
             />
             {formErrors.message && (
               <span className="error-message">Message is required</span>
