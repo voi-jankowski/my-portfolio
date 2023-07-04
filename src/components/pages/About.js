@@ -1,11 +1,18 @@
 import React from "react";
-import { Container, Header } from "semantic-ui-react";
+import { Container, Header, Image } from "semantic-ui-react";
 
 const About = () => {
   return (
     <section id="about">
       <Container text>
         <Header as="h2">About Me</Header>
+        <Image
+          src="assets/profile-zoom.jpg"
+          floated="right"
+          size="medium"
+          circular
+        />
+
         <br />
         <p>
           Voi here - full stack Web Developer with an extensive background in
