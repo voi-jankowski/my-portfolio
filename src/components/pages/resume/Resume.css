@@ -32,7 +32,7 @@ code {
   transition: opacity 0.3s ease;
 }
 
-.ui.medium.right.floated.image:hover .resume-overlay {
+.ui.medium.image:hover .resume-overlay {
   opacity: 1;
 }
 
