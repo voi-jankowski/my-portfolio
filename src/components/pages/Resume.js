@@ -22,6 +22,7 @@ const Resume = () => {
           alt="Resume"
           className="resume-image"
         />
+        <span className="resume-overlay">Go to Resume</span>
       </a>
 
       <br />
@@ -30,19 +31,19 @@ const Resume = () => {
       <code>
         <span className="proficiency-header">Front-end Proficiencies</span> [
         <br />
-        &nbsp;&nbsp;"HTML",
+        &nbsp;&nbsp;<span className="custom-color">HTML</span>,
         <br />
-        &nbsp;&nbsp;"CSS",
+        &nbsp;&nbsp;<span className="custom-color">CSS</span>,
         <br />
-        &nbsp;&nbsp;"JavaScript",
+        &nbsp;&nbsp;<span className="custom-color">JavaScript</span>,
         <br />
-        &nbsp;&nbsp;"JQuery",
+        &nbsp;&nbsp;<span className="custom-color">JQuery</span>,
         <br />
-        &nbsp;&nbsp;"React",
+        &nbsp;&nbsp;<span className="custom-color">React</span>,
         <br />
-        &nbsp;&nbsp;"Bootstrap",
+        &nbsp;&nbsp;<span className="custom-color">Bootstrap</span>,
         <br />
-        &nbsp;&nbsp;"Materialize"
+        &nbsp;&nbsp;<span className="custom-color">Materialize</span>
         <br />]
       </code>
 
@@ -52,17 +53,17 @@ const Resume = () => {
       <code>
         <span className="proficiency-header">Back-end Proficiencies</span> [
         <br />
-        &nbsp;&nbsp;"APIs",
+        &nbsp;&nbsp;<span className="custom-color">APIs</span>,
         <br />
-        &nbsp;&nbsp;"Node",
+        &nbsp;&nbsp;<span className="custom-color">Node</span>,
         <br />
-        &nbsp;&nbsp;"Express",
+        &nbsp;&nbsp;<span className="custom-color">Express</span>,
         <br />
-        &nbsp;&nbsp;"MySQL, Sequelize",
+        &nbsp;&nbsp;<span className="custom-color">MySQL, Sequelize</span>,
         <br />
-        &nbsp;&nbsp;"MongoDB, Mongoose",
+        &nbsp;&nbsp;<span className="custom-color">MongoDB, Mongoose</span>,
         <br />
-        &nbsp;&nbsp;"REST"
+        &nbsp;&nbsp;<span className="custom-color">REST</span>
         <br />]
       </code>
     </Container>

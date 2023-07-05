@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Button } from "semantic-ui-react";
+import { Container, Form, Button, Header } from "semantic-ui-react";
 import { validateForm } from "../../utils/helpers";
 
 const Contact = () => {
@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <Container id="contact">
       <br />
-      <h2>Contact Me</h2>
+      <Header as="h2">Contact Me</Header>
       <br />
       <Form onSubmit={handleSubmit}>
         <Form.Field required error={formErrors.name}>

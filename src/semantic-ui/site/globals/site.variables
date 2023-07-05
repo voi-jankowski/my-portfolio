@@ -1,3 +1,10 @@
 /*******************************
      User Global Variables
 *******************************/
+@textColor: #F2E9E0;
+@secondaryPointingActiveTextColor: orange;
+@primaryColor: #EDAA45;
+@pageBackground: #141213;
+@fontFamily: "Comfortaa", sans-serif;
+@pageFont: "Comfortaa", sans-serif;
+@formErrorColor: #952612;
