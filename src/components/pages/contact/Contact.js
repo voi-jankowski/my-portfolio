@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Header } from "semantic-ui-react";
-import { validateForm } from "../../utils/helpers";
+import { validateForm } from "../../../utils/helpers";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

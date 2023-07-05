@@ -2,7 +2,7 @@
      User Global Variables
 *******************************/
 @textColor: #F2E9E0;
-
+@linkColor: #EDAA45;
 @primaryColor: #EDAA45;
 @pageBackground: #141213;
 @fontFamily: "Comfortaa", sans-serif;

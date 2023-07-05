@@ -1,6 +1,7 @@
 import React from "react";
-import Project from "../Project";
-import { Grid, Container, Header } from "semantic-ui-react";
+import Project from "./Project";
+import "./Portfolio.css"; // Import custom CSS file for Portfolio component
+import { Container, Header, Grid } from "semantic-ui-react";
 
 const Portfolio = () => {
   const projects = [
@@ -71,7 +72,7 @@ const Portfolio = () => {
       <br />
       <Header as="h2">Portfolio</Header>
       <br />
-      <Grid stackable columns={3}>
+      <Grid stackable columns={2}>
         {projects.map((project, index) => (
           <Grid.Column key={index}>
             <Project
@@ -83,6 +84,11 @@ const Portfolio = () => {
           </Grid.Column>
         ))}
       </Grid>
+      <br />
+      <br />
+      <br />
+      <br />
+      __
     </Container>
   );
 };

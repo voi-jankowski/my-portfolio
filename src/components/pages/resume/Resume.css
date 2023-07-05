@@ -1,20 +1,14 @@
-.proficiency-card {
-  background-color: black;
-  color: white;
-  margin-bottom: 1rem;
-}
-
 .proficiency-header {
   color: #edaa45 !important;
 }
 
 .custom-color {
-  color: #3c84c4;
+  color: #326da1;
 }
 
 code {
   font-weight: bolder;
-
+  font-size: 1.2rem;
   padding: 0.2rem;
 }
 
