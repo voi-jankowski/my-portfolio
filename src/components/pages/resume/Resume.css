@@ -35,3 +35,7 @@ code {
 .ui.medium.right.floated.image:hover .resume-overlay {
   opacity: 1;
 }
+
+#code-container {
+  min-width: 50%;
+}
