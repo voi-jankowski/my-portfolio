@@ -67,5 +67,5 @@ If you have any questions or would like to get in touch, feel free to reach out 
 - Email: voi.jankowski@gmail.com
 - LinkedIn: [linkedin.com/in/voi-jankowski/](https://www.linkedin.com/in/voi-jankowski/)
 
-The page can be accessed [here]() .
+The page can be accessed [here](https://voi-jankowski.github.io/my-portfolio/) .
 Thank you for visiting my portfolio webpage! I hope you find it informative and engaging.
