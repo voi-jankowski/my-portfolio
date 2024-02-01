@@ -6,26 +6,32 @@ import { Container, Header, Grid } from "semantic-ui-react";
 const Portfolio = () => {
   const projects = [
     {
+      title: "Samuel J. Halpin Portal",
+      image: "/assets/samuel.j.halpinGIF.gif",
+      deployedLink: "https://samueljhalpin.com/",
+      githubLink: "https://github.com/voi-jankowski/samuel.j.halpin",
+    },
+    {
       title: "Marvelites",
-      image: "./assets/MarvelitesGIF.gif",
+      image: "/assets/MarvelitesGIF.gif",
       deployedLink: "https://voi-jankowski.github.io/marvel/",
       githubLink: "https://github.com/voi-jankowski/marvel",
     },
     {
       title: "Social Network Back End",
-      image: "./assets/SocialMediaGIF.gif",
+      image: "/assets/SocialMediaGIF.gif",
       deployedLink: "https://github.com/voi-jankowski/social-network-api",
       githubLink: "https://github.com/voi-jankowski/social-network-api",
     },
     {
       title: "TechTonic Blog",
-      image: "./assets/TechTonicGIF.gif",
+      image: "/assets/TechTonicGIF.gif",
       deployedLink: "https://safe-sea-90944.herokuapp.com/",
       githubLink: "https://github.com/voi-jankowski/tech-blog",
     },
     {
       title: "E-commerce Back End",
-      image: "./assets/E-CommerceGIF.gif",
+      image: "/assets/E-CommerceGIF.gif",
       deployedLink: "https://github.com/voi-jankowski/e-commerce-back-end",
       githubLink: "https://github.com/voi-jankowski/e-commerce-back-end",
     },
@@ -37,16 +43,17 @@ const Portfolio = () => {
     // },
     {
       title: "Weather Dashboard",
-      image: "./assets/WeatherDashboardGIF.gif",
+      image: "/assets/WeatherDashboardGIF.gif",
       deployedLink: "https://voi-jankowski.github.io/weather-dashboard/",
       githubLink: "https://github.com/voi-jankowski/weather-dashboard",
     },
     {
       title: "Work Day Scheduler",
-      image: "./assets/DaySchedulerGIF.gif",
+      image: "/assets/DaySchedulerGIF.gif",
       deployedLink: "https://voi-jankowski.github.io/work-day-scheduler/",
       githubLink: "https://github.com/voi-jankowski/work-day-scheduler",
     },
+
     // {
     //   title: "Password Generator",
     //   image: "./assets/PasswordGeneratorGIF.gif",

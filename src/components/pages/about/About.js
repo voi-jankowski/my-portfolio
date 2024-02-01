@@ -8,7 +8,7 @@ const About = () => {
         <br />
         <Header as="h2">About Me</Header>
         <Image
-          src="./assets/profile-zoom.jpg"
+          src="/assets/profile-zoom.jpg"
           floated="right"
           size="medium"
           circular
