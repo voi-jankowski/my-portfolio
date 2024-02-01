@@ -3,4 +3,4 @@
 *******************************/
 @imageBorder: 3px solid #f2e9e0;
 @imageBorderRadius: 50%;
-@placeholderColor: #F2E9E0;
+@placeholderColor: transparent;

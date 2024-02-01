@@ -1,5 +1,35 @@
 /* styles.css */
 
+/* Header styles */
+#my-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  #my-header {
+    max-width: 80%; /* Adjust the percentage as needed */
+  }
+}
+
+/* Even larger screens */
+@media (min-width: 1024px) {
+  #my-header {
+    max-width: 75%; /* Adjust the percentage as needed */
+  }
+}
+
+/* Even larger screens */
+@media (min-width: 1524px) {
+  #my-header {
+    max-width: 50%; /* Adjust the percentage as needed */
+  }
+}
+
 /* Footer styles */
 .footer {
   position: fixed;
