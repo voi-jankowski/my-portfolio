@@ -7,6 +7,7 @@ import "./App.css"; // Import the styles.css file
 const App = () => (
   <div>
     <PortfolioContainer />
+    <br />
     <Footer />
   </div>
 );

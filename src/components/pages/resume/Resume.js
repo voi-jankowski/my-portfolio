@@ -4,7 +4,7 @@ import "./Resume.css"; // Import custom CSS file for Resume component
 
 const Resume = () => {
   const resumeUrl =
-    "https://drive.google.com/file/d/1YLzP4XDYEDFxxemPhHGZjWhejxq0iCND/view?usp=sharing";
+    "https://drive.google.com/file/d/1Lk6heRbF7BSW247CqumhdvdOelCG25P1/view?usp=sharing";
 
   return (
     <Container id="resume">
