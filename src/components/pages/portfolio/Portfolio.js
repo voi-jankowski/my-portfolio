@@ -12,10 +12,10 @@ const Portfolio = () => {
       githubLink: "https://github.com/voi-jankowski/samuel.j.halpin",
     },
     {
-      title: "Marvelites",
-      image: "/assets/MarvelitesGIF.gif",
-      deployedLink: "https://voi-jankowski.github.io/marvel/",
-      githubLink: "https://github.com/voi-jankowski/marvel",
+      title: "Weather Dashboard",
+      image: "/assets/WeatherDashboardGIF.gif",
+      deployedLink: "https://voi-jankowski.github.io/weather-dashboard/",
+      githubLink: "https://github.com/voi-jankowski/weather-dashboard",
     },
     {
       title: "Social Network Back End",
@@ -41,11 +41,12 @@ const Portfolio = () => {
     // deployedLink: "https://github.com/voi-jankowski/professional-README-generator",
     // githubLink: "https://github.com/voi-jankowski/professional-README-generator",
     // },
+
     {
-      title: "Weather Dashboard",
-      image: "/assets/WeatherDashboardGIF.gif",
-      deployedLink: "https://voi-jankowski.github.io/weather-dashboard/",
-      githubLink: "https://github.com/voi-jankowski/weather-dashboard",
+      title: "Marvelites",
+      image: "/assets/MarvelitesGIF.gif",
+      deployedLink: "https://voi-jankowski.github.io/marvel/",
+      githubLink: "https://github.com/voi-jankowski/marvel",
     },
     {
       title: "Work Day Scheduler",
