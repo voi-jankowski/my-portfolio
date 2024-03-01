@@ -30,6 +30,8 @@ const Resume = () => {
               <br />
               &nbsp;&nbsp;<span className="custom-color">React</span>,
               <br />
+              &nbsp;&nbsp;<span className="custom-color">TypeScript</span>,
+              <br />
               &nbsp;&nbsp;<span className="custom-color">Bootstrap</span>,
               <br />
               &nbsp;&nbsp;<span className="custom-color">Materialize</span>
